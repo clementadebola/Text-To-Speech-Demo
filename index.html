@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech Demo</title>
+    <title>Text to Speech Demo with Listen</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="body">
-        <h3>Text to speech</h3>
+        <div class="head">
+            <h3>Text to speech with Listen </h3>
+            <p>Quickly convert words and sentences to MP3 audio using Google Text to Speech Api</p>
+    
+        </div>
+       
         <div class="main">
-            <input id="text-to-read" placeholder="Enter text to be spoken..." type="text">
+            <div class="box1">
+                <h4>Text</h4>
+                <input id="text-to-read" placeholder="Enter text to be spoken..." type="text">
+                <p>Enter your text and the app will convert your words to Mp3 audio</p>
+            </div>
+           
             <!-- <button onclick="speak()"> speak </button> -->
-            <button id="speakbutton"> Speak</button>
+            <div class="btn">
+                <button id="speakbutton"> Speak</button>
+                <!-- <button id="downloadButton"> Download Audio</button> -->
+            </div>
+         
         </div>
-        <div class="display">
 
-        </div>
+        <footer>
+            <p>&copy; 2024 Text2Speech Project by <a href="#">Ziongate</a></p>
+        </footer>
     </div>
 
     <style src="index.js"></style>

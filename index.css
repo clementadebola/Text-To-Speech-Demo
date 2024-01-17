@@ -1,31 +1,142 @@
 body{
     margin: 0;
     padding: 0;
-    background: pink;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
 }
 body h3{
-    font-weight: 600;
+    font-weight: 800;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .main{
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
 }
-.main input{
-    height: 40px;
-    border-radius: 10px;
-    border-color: rgb(54, 152, 209);
+.head{
+    margin-bottom: 90px;
+}
+.head p{
+    color: #666;
+    font-size: 15px;
 
+}
+.box1 input{
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 .main button{
-    height: 40px;
-    width: 80px;
-    background: rgb(155, 152, 152);
+   background: #4caf50;
     color: #fff;
     border-radius: 6px;
+    margin: 5px;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    width: 500px;
+}
+.box1 p{
+    font-size: 14px;
+    color: #666;
+}
+.main button:hover{
+    background-color: #008cba;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
+#downloadButton{
+    margin-left: 10px;
+    background-color: #008cba;
+}
+#downloadButton:hover{
+    background-color: #00a66f;
+}
+
+/* footer style */
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #666;
+    font-size: 15px;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 300px;
+        margin: auto;
+    }
+    .head{
+        margin-bottom: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .head p{
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .box1 input{
+        width: 250px;
+    }
+    .box1 p{
+        font-size: 10px;
+    }
+    .btn{ 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .main button{
+        padding: 7px;
+        font-size: 12px;
+    }
+   
+}
+
+@media (max-width:375px) {
+    .head p{
+        text-align: center;
+        width: 300px;
+
+    }
+    .box1 input{
+        width: 200px;
+    }
+    .main{
+        width: 200px;
+        margin: auto;
+        padding: 30px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .main button{
+        padding: 7px;
+        font-size: 10px;
+    }
+    
+}
